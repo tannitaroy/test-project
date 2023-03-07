@@ -1,0 +1,78 @@
+.container {
+  width: 1140px;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+.layout {
+  width: 900px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 250px;
+  text-align: center;
+}
+
+.center {
+  width: 375px;
+}
+
+.logo,
+.center,
+.icon {
+  float: left;
+}
+
+.icon {
+  width: 250px;
+  background-color: grey;
+}
+
+.center > ul > li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.icon > ul > li {
+  display: inline-block;
+  margin: 15px;
+}
+
+ul.social-icon,
+ol.social-icon {
+  color: black;
+}
+ul > li,
+ol > li {
+  color: green;
+}
+ul > li > a,
+ol > li > a {
+  color: tomato;
+}
+ul > li > a:hover,
+ol > li > a:hover {
+  color: orangered;
+}
+ul > li:hover,
+ol > li:hover {
+  color: black;
+}
+
+.category .first {
+  background: green;
+  color: aquamarine;
+  border: 1px solid blueviolet;
+}
+.category .second {
+  background: red;
+  color: aquamarine;
+  border: 1px solid blueviolet;
+}
+.category .third {
+  background: grey;
+  color: aquamarine;
+  border: 1px solid blueviolet;
+}/*# sourceMappingURL=style.css.map */

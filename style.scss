@@ -1,0 +1,90 @@
+$container-width: 1140px;
+$main-color: grey;
+$layout-width: 900px;
+$other-color: white;
+$margin-width: 15px;
+$text-color: green;
+$anchor-color: tomato;
+$style: flex;
+
+@mixin theme($theme: darkgray) {
+  background: $theme;
+  color: aquamarine;
+  border: 1px solid blueviolet;
+}
+
+.container {
+  width: $container-width;
+  background-color: $main-color;
+  margin: 0 auto;
+}
+
+.layout {
+  width: $layout-width;
+  background-color: $other-color;
+  margin: 0 auto;
+}
+
+.logo {
+  width: ($layout-width - 150) /3;
+  text-align: center;
+}
+
+.center {
+  width: ($layout-width - 150) /2;
+  
+}
+
+.logo,
+.center,
+.icon {
+  float: left;
+}
+
+.icon {
+  width: ($layout-width - 150) /3;
+  background-color: $main-color;
+}
+
+.center > ul > li {
+  display: inline-block;
+  margin: $margin-width;
+}
+
+.icon > ul > li {
+  display: inline-block;
+  margin: $margin-width;
+}
+
+ul,
+ol {
+  &.social-icon {
+    color: black;
+  }
+  > li {
+    color: $text-color;
+    > a {
+      color: $anchor-color;
+      &:hover {
+        color: orangered;
+      }
+    }
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+
+
+.category {
+    .first {
+      @include theme($theme: green);
+    }
+    .second {
+      @include theme($theme: red);
+    }
+    .third {
+      @include theme($theme: grey); 
+    }
+}
